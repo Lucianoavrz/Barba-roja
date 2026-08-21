@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barba Roja | Barbería & Peluquería</title>
+    <meta name="description" content="Barba Roja Barbería - Reserva tu turno online con Luciano, Juan, Elian o Nahuel en O'Higgins 179. Instagram @barbaroja.bb">
+    <!-- Google Fonts: Cinzel, Outfit, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Outfit:wght@400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <img src="assets/logo-icon.jpg" alt="Barba Roja Icon" class="logo-img">
+                <span class="brand-name"><span class="text-white">BARBA</span><span class="text-red">ROJA</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#barberos" class="nav-link">Barberos</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://instagram.com/barbaroja.bb" target="_blank" class="btn-settings-trigger" title="Instagram @barbaroja.bb">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <button class="btn-settings-trigger" id="btn-open-settings" title="Configurar WhatsApps">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <button class="btn btn-primary btn-glow" id="btn-trigger-booking">
+                    <i class="fa-regular fa-calendar-check"></i> Sacar Turno
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Minimalist (Fondo Negro con Logo y Tipografía Profesional) -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-logo-wrap">
+                <img src="assets/logo-full.jpg" alt="Barba Roja Logo" class="hero-logo-img">
+            </div>
+            <p class="hero-subtitle">Reserva tu turno online directo al WhatsApp de tu barbero</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg btn-glow" id="hero-btn-booking">
+                    <i class="fa-brands fa-whatsapp fa-lg"></i> Reservar Turno Ahora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barberos Section -->
+    <section class="barberos-section" id="barberos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NUESTROS <span class="text-red">BARBEROS</span></h2>
+            </div>
+
+            <div class="barberos-grid" id="barberos-grid">
+                <!-- Carga dinámicamente: Luciano, Juan, Elian, Nahuel -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section class="servicios-section" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SERVICIOS & <span class="text-red">PRECIOS</span></h2>
+                <p class="payment-notice"><i class="fa-solid fa-money-bill-wave text-red"></i> Precios en <strong>efectivo</strong>. Pagos con transferencia tienen un <strong>10% de recargo</strong>.</p>
+            </div>
+
+            <div class="servicios-grid" id="servicios-grid">
+                <!-- Cargados dinámicamente desde JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto & Ubicación (@barbaroja.bb) -->
+    <section class="contacto-section" id="contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h2 class="section-title"><span class="text-red">UBICACIÓN</span> & CONTACTO</h2>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p><strong>O’Higgins 179</strong></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div>
+                                <h4>Horarios de Atención</h4>
+                                <p>Lunes a Sábado: <strong>10:00 - 20:00 hs</strong></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div>
+                                <h4>Instagram Oficial</h4>
+                                <p><a href="https://instagram.com/barbaroja.bb" target="_blank" class="text-red"><strong>@barbaroja.bb</strong></a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp Central</h4>
+                                <p><a href="https://wa.me/5492914022478" target="_blank" class="text-white"><strong>+54 9 2914 02-2478</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <img src="assets/logo-icon.jpg" alt="Icon" class="map-logo-icon">
+                        <h3>BARBA ROJA</h3>
+                        <p>O’Higgins 179</p>
+                        <p class="text-sm text-red margin-top">Instagram: @barbaroja.bb</p>
+                        <a href="https://maps.google.com/?q=O%27Higgins+179" target="_blank" class="btn btn-outline btn-sm margin-top">
+                            <i class="fa-solid fa-directions"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo-icon.jpg" alt="Logo" class="footer-logo">
+                <span>BARBA ROJA BARBERÍA</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/barbaroja.bb" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i> @barbaroja.bb</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Barba Roja • O’Higgins 179</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DINÁMICO DE RESERVA (MULTI-PASO) -->
+    <div class="booking-modal-overlay" id="booking-modal-overlay">
+        <div class="booking-modal-card">
+            <!-- Modal Header -->
+            <div class="bmodal-header">
+                <div class="bmodal-title-wrap">
+                    <span class="bmodal-tag"><i class="fa-solid fa-scissors text-red"></i> BARBA ROJA</span>
+                    <h2 class="bmodal-title">RESERVAR TURNO</h2>
+                </div>
+                <button class="bmodal-close" id="btn-close-booking-modal">&times;</button>
+            </div>
+
+            <!-- Stepper Bar -->
+            <div class="stepper-bar">
+                <div class="step-item active" id="step-indicator-1">
+                    <div class="step-circle">1</div>
+                    <span class="step-label">Servicio</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item" id="step-indicator-2">
+                    <div class="step-circle">2</div>
+                    <span class="step-label">Barbero</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item" id="step-indicator-3">
+                    <div class="step-circle">3</div>
+                    <span class="step-label">Fecha/Hora</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item" id="step-indicator-4">
+                    <div class="step-circle">4</div>
+                    <span class="step-label">Confirmar</span>
+                </div>
+            </div>
+
+            <!-- Modal Content Steps -->
+            <div class="bmodal-body">
+                
+                <!-- PASO 1: SELECCIONAR SERVICIO -->
+                <div class="wizard-step active" id="wizard-step-1">
+                    <h3 class="step-heading">Elige el servicio:</h3>
+                    <div class="step-cards-grid" id="step-services-grid"></div>
+                </div>
+
+                <!-- PASO 2: SELECCIONAR BARBERO -->
+                <div class="wizard-step" id="wizard-step-2">
+                    <h3 class="step-heading">Selecciona tu barbero:</h3>
+                    <div class="step-cards-grid" id="step-barbers-grid"></div>
+                </div>
+
+                <!-- PASO 3: SELECCIONAR FECHA Y HORARIO -->
+                <div class="wizard-step" id="wizard-step-3">
+                    <h3 class="step-heading">Selecciona fecha y horario:</h3>
+                    <div class="datetime-picker-wrap">
+                        <div class="datepicker-box">
+                            <label for="modal-input-fecha"><i class="fa-regular fa-calendar-days text-red"></i> Fecha:</label>
+                            <input type="date" id="modal-input-fecha" class="custom-date-input">
+                        </div>
+
+                        <div class="slots-box">
+                            <label><i class="fa-regular fa-clock text-red"></i> Horarios disponibles (Ocupados tachados ❌):</label>
+                            <div class="time-slots-grid" id="modal-time-slots"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PASO 4: DATOS DEL CLIENTE & RESUMEN -->
+                <div class="wizard-step" id="wizard-step-4">
+                    <h3 class="step-heading">Ingresa tus datos para enviar la reserva a WhatsApp:</h3>
+                    <div class="confirm-grid">
+                        <div class="user-inputs-col">
+                            <div class="form-group">
+                                <label for="modal-input-nombre"><i class="fa-solid fa-user text-red"></i> Tu Nombre y Apellido:</label>
+                                <input type="text" id="modal-input-nombre" placeholder="Ej: Carlos Gómez" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="modal-input-telefono"><i class="fa-solid fa-phone text-red"></i> Tu Teléfono:</label>
+                                <input type="tel" id="modal-input-telefono" placeholder="Ej: 2914123456" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="modal-input-notas"><i class="fa-solid fa-comment-dots text-red"></i> Nota / Aclaración (Opcional):</label>
+                                <textarea id="modal-input-notas" rows="2" placeholder="Ej: Preferencia de corte"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Ticket Resumen -->
+                        <div class="ticket-summary">
+                            <div class="ticket-header">
+                                <span>TICKET DE TURNO</span>
+                                <i class="fa-solid fa-receipt text-red"></i>
+                            </div>
+                            <div class="ticket-body">
+                                <div class="ticket-row">
+                                    <span class="ticket-label">Servicio:</span>
+                                    <span class="ticket-val" id="ticket-servicio">-</span>
+                                </div>
+                                <div class="ticket-row">
+                                    <span class="ticket-label">Barbero:</span>
+                                    <span class="ticket-val" id="ticket-barbero">-</span>
+                                </div>
+                                <div class="ticket-row">
+                                    <span class="ticket-label">Fecha & Hora:</span>
+                                    <span class="ticket-val" id="ticket-fechahora">-</span>
+                                </div>
+                                <div class="ticket-divider"></div>
+                                <div class="ticket-row">
+                                    <span class="ticket-label">Efectivo:</span>
+                                    <span class="ticket-val text-red" id="ticket-precio-efectivo">$0</span>
+                                </div>
+                                <div class="ticket-row">
+                                    <span class="ticket-label">Transferencia (+10%):</span>
+                                    <span class="ticket-val text-muted" id="ticket-precio-transferencia">$0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer Controls -->
+            <div class="bmodal-footer">
+                <button class="btn btn-outline" id="btn-wizard-prev" style="display: none;">
+                    <i class="fa-solid fa-chevron-left"></i> Anterior
+                </button>
+                <div class="footer-spacer"></div>
+                <button class="btn btn-primary btn-glow" id="btn-wizard-next">
+                    Siguiente <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="btn btn-primary btn-glow" id="btn-wizard-submit" style="display: none;">
+                    <i class="fa-brands fa-whatsapp fa-lg"></i> Enviar a WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Configuración de Teléfonos WhatsApp de Barberos -->
+    <div class="modal-overlay" id="settings-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-sliders text-red"></i> WhatsApp de Barberos</h3>
+                <button class="modal-close" id="btn-close-settings">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="text-sm text-muted">Configura los números personales de cada barbero:</p>
+                <div class="barbers-phones-list" id="barbers-phones-list"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btn-save-phones">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check text-red"></i>
+        <span id="toast-message">Notificación</span>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
